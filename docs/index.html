@@ -3,113 +3,59 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f6f3eb">
-  <meta name="description" content="A daily piano reading practice: a steady pulse, fresh music, and room to enjoy playing.">
-  <title>The reading practice · Piano</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="curriculum.js" defer></script>
-  <script src="app.js" defer></script>
+  <meta name="description" content="Daily piano practice: 30 minutes of sight-reading and 30 minutes of pieces.">
+  <title>Piano practice</title>
+  <link rel="stylesheet" href="style.css?v=2">
+  <script src="curriculum.js?v=2" defer></script>
+  <script src="app.js?v=2" defer></script>
 </head>
 <body>
-  <a class="skip-link" href="#practice">Skip to today’s practice</a>
-  <div class="page-shell">
-    <header class="masthead">
-      <a class="wordmark" href="#" aria-label="Piano practice home"><span class="piano-mark" aria-hidden="true"><i></i><i></i><i></i></span>piano / practice</a>
-      <a class="text-link" href="https://github.com/kiankyars/piano/blob/main/curriculum/plan.md" target="_blank" rel="noopener noreferrer">Read the full plan <span aria-hidden="true">↗</span></a>
-    </header>
+  <main>
+    <h1>Piano practice</h1>
+    <p>30 minutes of sight-reading. 30 minutes of pieces.</p>
 
-    <main>
-      <section class="intro" aria-labelledby="page-title">
-        <div>
-          <p class="eyebrow">A little, every day</p>
-          <h1 id="page-title">Learn to read.<br><em>Keep the music moving.</em></h1>
-          <p class="intro-copy">One hour at the piano. Fresh, easy music for your reading; familiar music for the joy of playing.</p>
-        </div>
-        <div class="daily-total" aria-label="60 minutes: 30 reading and 30 playing">
-          <span class="total-number">60<span>min</span></span>
-          <span class="total-label">30 reading &nbsp;·&nbsp; 30 playing</span>
-          <span class="total-note">Consistency before difficulty.</span>
-        </div>
-      </section>
+    <label for="stage-select">Reading level</label>
+    <select id="stage-select">
+      <option value="1">1. Find your reading level</option>
+      <option value="2">2. Connect the two staves</option>
+      <option value="3">3. Read in C, G and F</option>
+      <option value="4">4. Recognize musical shapes</option>
+      <option value="5">5. Read phrases</option>
+      <option value="6">6. Keep progressing</option>
+    </select>
 
-      <div id="storage-status" class="notice" role="status" hidden></div>
-      <noscript><p class="notice">Enable JavaScript for the practice page, or open <a href="https://github.com/kiankyars/piano/blob/main/curriculum/plan.md">the full written curriculum</a>.</p></noscript>
+    <h2>1. Sight-reading — 30 minutes</h2>
+    <p><a id="score-link" href="https://www.gmajormusictheory.org/Freebies/freebiesFP.html">Open scores: First Pieces → Primer</a></p>
+    <p>Pick a short excerpt you haven’t played. Look it over, choose a slow beat, and play through without restarting. Check the difficult spot afterward, then move to fresh music.</p>
+    <p id="reading-instruction">Start with 4–8 bars. If you keep stopping, choose easier music or try one hand.</p>
+    <p id="first-score">Start with <a href="https://www.gmajormusictheory.org/Freebies/Primer/pLesCloches/pLesCloches.pdf">Les Cloches</a>. There are more suggestions in the <a href="https://github.com/kiankyars/piano/blob/main/curriculum/first-week.md">starting score list</a>.</p>
 
-      <section class="orientation" aria-labelledby="stage-heading">
-        <div class="stage-choice">
-          <p class="eyebrow">Your current chapter</p>
-          <label for="stage-select" id="stage-heading">Choose your reading stage</label>
-          <select id="stage-select"></select>
-          <p id="stage-weeks" class="muted small"></p>
-          <p class="small">Advance when the reading feels fluent. The calendar never changes your level.</p>
-        </div>
-        <div class="stage-overview">
-          <p class="eyebrow" id="stage-number"></p>
-          <h2 id="stage-title"></h2>
-          <p id="stage-focus" class="stage-focus"></p>
-          <details>
-            <summary>Notes, rhythm &amp; readiness to move on</summary>
-            <dl class="stage-details">
-              <div><dt>Notes &amp; range</dt><dd id="stage-notes"></dd></div>
-              <div><dt>Rhythm</dt><dd id="stage-rhythm"></dd></div>
-              <div><dt>Fresh reading</dt><dd id="stage-reading"></dd></div>
-              <div><dt>Technique</dt><dd id="stage-technique"></dd></div>
-              <div><dt>Ready to move on?</dt><dd id="stage-gate"></dd></div>
-            </dl>
-          </details>
-        </div>
-      </section>
+    <h2>2. Pieces — 30 minutes</h2>
+    <p>Work on a piece you want to play. Choose one passage or problem, practice it slowly, then put it back into the phrase. Keep time to play for enjoyment. Alternate your Mozart pieces with easier new music learned from the score.</p>
 
-      <section class="session-section" aria-labelledby="session-heading">
-        <div class="section-heading"><div><p class="eyebrow">A repeating seven-session cycle</p><h2 id="session-heading">Today’s focus</h2></div><span class="small muted">Missed a day? Pick up here.</span></div>
-        <div id="session-buttons" class="session-buttons" role="group" aria-label="Choose a practice session"></div>
-        <div class="session-focus">
-          <div><p class="eyebrow" id="session-label"></p><h3 id="session-title"></h3><p id="session-description"></p></div>
-          <div class="session-navigation"><button id="previous-session" class="icon-button" type="button" aria-label="Previous practice session">←</button><button id="next-session" class="icon-button" type="button" aria-label="Next practice session">→</button></div>
-        </div>
-      </section>
+    <details>
+      <summary>If you get stuck</summary>
+      <p>Use a drill only for the problem you’re having, then return to the score.</p>
+      <ul>
+        <li><a href="https://www.musictheory.net/exercises/note">Note reading</a>: choose the clef and range you need; play each note on the piano.</li>
+        <li><a id="rhythm-link" href="https://sightread.org/?rhythm-reading#t=60&amp;m=4&amp;ts=44&amp;up=q,h,w&amp;ur=0.1&amp;c=yes">Rhythm</a>: count and tap before checking playback.</li>
+      </ul>
+      <p id="technique-instruction">For an awkward movement, practice that small pattern comfortably and slowly.</p>
+    </details>
 
-      <section id="practice" class="practice-section" aria-labelledby="practice-heading">
-        <div class="section-heading"><div><p class="eyebrow">Your daily hour</p><h2 id="practice-heading">Sit down. Start small.</h2></div><a id="main-library-link" class="button primary" target="_blank" rel="noopener noreferrer">Open score library <span aria-hidden="true">↗</span></a></div>
-        <p class="library-caption small muted">Today’s starting shelf: <span id="library-name"></span>. Choose an unseen excerpt that you can keep moving through.</p>
-        <p id="first-score" class="first-score small">First session? <a href="https://www.gmajormusictheory.org/Freebies/Primer/pLesCloches/pLesCloches.pdf" target="_blank" rel="noopener noreferrer">Try Les Cloches ↗</a> for 4–8 bars. If that breaks the pulse, choose an easier score from <a href="https://www.gmajormusictheory.org/Freebies/freebiesFP.html" target="_blank" rel="noopener noreferrer">First Pieces ↗</a>. Follow the <a href="https://github.com/kiankyars/piano/blob/main/curriculum/first-week.md" target="_blank" rel="noopener noreferrer">first-week guide ↗</a> for your opening sessions.</p>
-        <div class="practice-layout">
-          <div id="practice-blocks" class="practice-blocks"></div>
-          <aside class="practice-aside">
-            <section class="timer-panel" aria-labelledby="timer-heading">
-              <p class="eyebrow" id="timer-heading">One block at a time</p>
-              <h3 id="timer-block-title"></h3>
-              <div class="timer-digits" id="timer-display" role="timer" aria-live="off">05:00</div>
-              <div class="timer-controls"><button id="timer-toggle" class="button primary" type="button">Start timer</button><button id="timer-reset" class="button secondary" type="button">Reset</button></div>
-              <p class="small muted">Optional. Select a block to change the timer; the next block starts when you choose.</p>
-              <p id="timer-status" class="small" role="status" aria-live="polite"></p>
-            </section>
-            <div class="reading-rule"><span class="rule-number" aria-hidden="true">01</span><h3>The first attempt counts.</h3><p>Preview the score. Count in. Keep a gentle pulse and resist restarting. Check mistakes afterward.</p><p>If you keep stopping, choose easier music or a shorter excerpt.</p></div>
-          </aside>
-        </div>
-      </section>
+    <details>
+      <summary>About this reading level</summary>
+      <p id="stage-focus">Read small patterns in both clefs, and keep a slow pulse.</p>
+      <p id="stage-notes">Start in C major with steps, repeated notes and thirds.</p>
+      <p id="stage-rhythm">Quarter, half and whole notes in 4/4.</p>
+      <p><strong>When to advance:</strong> <span id="stage-gate">Try three unfamiliar excerpts on different days. Advance when you can keep the pulse with roughly 90% of pitches and durations correct, without restarting.</span></p>
+      <p>The stage numbers are this curriculum’s sequence, not exam grades. There is no deadline to advance.</p>
+    </details>
 
-      <section class="log-section" aria-labelledby="log-heading">
-        <div class="section-heading"><div><p class="eyebrow">A small record of real progress</p><h2 id="log-heading">Your reading notebook</h2></div><button id="export-log" class="button secondary" type="button" disabled>Export log ↓</button></div>
-        <p class="log-intro">Log a fresh first attempt, before rehearsal. These are your estimates; this page does not listen or measure your playing. Three fluent readings on different days are a useful signal to review the next stage.</p>
-        <div class="log-layout">
-          <form id="practice-log-form">
-            <div class="form-row"><div class="field"><label for="log-date">Date</label><input id="log-date" name="date" type="date" required></div><div class="field"><label for="log-tempo">Tempo <span class="muted">(bpm)</span></label><input id="log-tempo" name="tempo" type="number" min="1" max="300" step="1" placeholder="e.g. 50" required></div></div>
-            <div class="field"><label for="log-excerpt">Piece or excerpt title</label><input id="log-excerpt" name="excerpt" type="text" maxlength="180" placeholder="Enough detail to find it again" required></div>
-            <div class="field"><label for="log-score-url">Score URL <span class="muted">(optional)</span></label><input id="log-score-url" name="scoreUrl" type="url" maxlength="2000" placeholder="https://…"></div>
-            <div class="form-row"><div class="field"><label for="log-bars">Bars read</label><input id="log-bars" name="bars" type="text" maxlength="80" placeholder="e.g. 1–8" required></div><div class="field"><label for="log-pulse">Continuous pulse?</label><select id="log-pulse" name="pulse" required><option value="">Choose…</option><option value="yes">Yes — kept moving</option><option value="no">No — paused or restarted</option></select></div></div>
-            <div class="form-row"><div class="field"><label for="log-pitch">Pitch accuracy <span class="muted">(approx. %, optional)</span></label><input id="log-pitch" name="pitch" type="number" min="0" max="100" step="1" placeholder="Leave blank if unsure"></div><div class="field"><label for="log-rhythm">Rhythm accuracy <span class="muted">(approx. %, optional)</span></label><input id="log-rhythm" name="rhythm" type="number" min="0" max="100" step="1" placeholder="Leave blank if unsure"></div></div>
-            <div class="field"><label for="log-note">One observation <span class="muted">(optional)</span></label><textarea id="log-note" name="note" rows="2" maxlength="1000" placeholder="What helped? What interrupted the pulse?" aria-describedby="log-note-hint"></textarea><p id="log-note-hint" class="small muted">Optional: include key, meter, hands, beat unit and next unread score here.</p></div>
-            <label class="checkbox-label"><input name="firstAttempt" type="checkbox" required><span>This was an unseen excerpt’s first attempt.</span></label>
-            <div class="form-actions"><button class="button primary" type="submit">Save first attempt</button><span id="log-status" class="small" role="status" aria-live="polite"></span></div>
-            <p class="small muted">Saved only in this browser, on this device. Export occasionally; clearing browser data clears your notebook. Entries do not change your stage.</p>
-          </form>
-          <div class="recent-log"><div class="recent-log-heading"><h3>Recent first attempts</h3><span id="log-count" class="small muted">0 entries</span></div><div id="log-entries"></div></div>
-        </div>
-      </section>
-    </main>
-
-    <footer><p>Keep the score new. Keep the pulse kind.</p><nav aria-label="Project links"><a href="https://github.com/kiankyars/piano/blob/main/README.md" target="_blank" rel="noopener noreferrer">About this practice ↗</a><a href="https://github.com/kiankyars/piano/blob/main/curriculum/plan.md" target="_blank" rel="noopener noreferrer">Curriculum &amp; sources ↗</a></nav></footer>
-  </div>
+    <noscript><p>JavaScript is needed to change levels. The routine above works as written; use the full curriculum for other levels.</p></noscript>
+  </main>
+  <footer>
+    <p><a href="https://github.com/kiankyars/piano/blob/main/curriculum/plan.md">Full curriculum</a> · <a href="https://github.com/kiankyars/piano/blob/main/curriculum/resources.md">Resources</a> · <a href="https://github.com/kiankyars/piano">GitHub</a></p>
+  </footer>
 </body>
 </html>

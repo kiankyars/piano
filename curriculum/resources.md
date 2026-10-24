@@ -6,8 +6,8 @@ Checked 24 October 2026. Use the free core for the first two weeks before decidi
 
 | Resource | Role | How to use it |
 | --- | --- | --- |
-| [musictheory.net Note Identification](https://www.musictheory.net/exercises/note) | Short notation-to-keyboard drill | Customize clef/range/key. Name and then play each note. Stop at five minutes; flashcards are not the main reading task. |
-| [SightRead.org](https://sightread.org/) | Fresh rhythm reading | The practice page supplies stage-specific links. Tap/count before listening to playback, then generate another exercise. |
+| [musictheory.net Note Identification](https://www.musictheory.net/exercises/note) | Optional help with finding notes | Customize clef/range/key. Name and then play each note briefly when note recognition blocks the score; then return to music. |
+| [SightRead.org](https://sightread.org/) | Optional help with rhythm | Use a stage-specific link when rhythm blocks your reading. Tap/count before listening to playback, then return to an easy score. |
 | [G Major Music Theory](https://www.gmajormusictheory.org/Freebies/freebies.html) | Actual piano scores | Choose standard notation from First Pieces, Primer, Level 1 or Level 2. Read before listening to the supplied audio. Difficulty varies within a level. |
 
 These sites provide the exercises and scores; this repository supplies the schedule and progression decisions. No equipment connection is required. Their free-access and customization information comes from the [musictheory.net exercise directory](https://www.musictheory.net/exercises), [FAQ](https://www.musictheory.net/faq), and [SightRead.org's URL documentation](https://sightread.org/blog/practice-urls/). If a configured rhythm link stops working, select the stated meter and simple note values manually.
