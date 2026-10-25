@@ -1,12 +1,24 @@
-html { font-size: 18px; }
-body { max-width: 38rem; margin: 1rem auto; padding: 0 1rem; line-height: 1.45; }
-h1 { font-size: 1.8rem; margin-bottom: .5rem; }
-h2 { font-size: 1.25rem; margin-top: 1.5rem; }
-label { display: block; margin-bottom: .3rem; }
-select { box-sizing: border-box; width: 100%; min-height: 44px; font-size: 16px; }
+html { font-size: 18px; color-scheme: light; }
+body { max-width: 38rem; margin: .75rem auto; padding: 0 .7rem; line-height: 1.4; color: #111; background: #fff; }
+h1 { font-size: 1.4rem; margin: 0 0 .65rem; }
+h2 { font-size: 1.15rem; margin: 1rem 0 .6rem; }
+label { display: block; margin-bottom: .25rem; }
+select, button { box-sizing: border-box; min-height: 44px; font-size: 16px; }
+select { width: 100%; }
+button { padding: .5rem .8rem; cursor: pointer; }
+button:disabled { cursor: default; }
+p { margin: .7rem 0; }
 a { overflow-wrap: anywhere; }
-li { margin: .6rem 0; }
-details { margin: 1rem 0; }
+details { margin: .6rem 0; }
 summary { padding: .5rem 0; cursor: pointer; }
-footer { margin-top: 2rem; }
-[hidden] { display: none; }
+footer { margin-top: 1.5rem; }
+.instruction, .small, #exercise-meta { font-size: .9rem; }
+#exercise-meta { margin-bottom: .2rem; }
+#score { width: 100%; min-height: 10rem; }
+#score svg { display: block; }
+.controls { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: .5rem; }
+#next-exercise { flex: 1; }
+#score-error { color: #a00; }
+#playback-status:empty { display: none; }
+[hidden] { display: none !important; }
+@media print { .controls, details, footer, label, select, .instruction, #playback-status { display: none; } }

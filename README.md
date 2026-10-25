@@ -1,42 +1,41 @@
 # Piano, one day at a time
 
-**[Open the daily practice page →](https://kiankyars.github.io/piano/)**
+**[Open the practice page →](https://kiankyars.github.io/piano/)**
 
-A free-first curriculum for a returning pianist whose playing is ahead of their sight-reading. Designed for **one hour a day**, on an acoustic or digital piano. No MIDI, account or subscription is required for the core exercises.
-
-## Start today
-
-1. Open the [practice page](https://kiankyars.github.io/piano/). Begin at stage 1; use the [placement check](curriculum/plan.md#first-session-find-your-starting-point) to choose suitably easy reading.
-2. Try 4–8 bars of [Les Cloches](https://www.gmajormusictheory.org/Freebies/Primer/pLesCloches/pLesCloches.pdf). Preview the score, choose a slow beat, then play once without restarting. Use [First Pieces](https://www.gmajormusictheory.org/Freebies/freebiesFP.html) if it is too hard; skip entries without staves.
-3. Check the **first attempt**: did the pulse continue, and were pitches and rhythms mostly right? Repair one problem, then choose something you have not already played. Familiar tunes are fine for practice; use unfamiliar music for benchmarks.
+A simple daily practice for a returning pianist whose playing is ahead of their sight-reading. The page opens directly to a four-bar exercise in standard piano notation. Use an acoustic or digital piano; no MIDI, account or subscription is required.
 
 ## The daily hour
 
-| Minutes | Task | Open |
-| --- | --- | --- |
-| 0–30 | Sight-reading: preview, play once, check, then try fresh music | [First Pieces](https://www.gmajormusictheory.org/Freebies/freebiesFP.html) / [Primer](https://www.gmajormusictheory.org/Freebies/freebiesP.html) |
-| 30–60 | Pieces: work on a useful passage or learn a new easy piece, then enjoy playing | Your scores |
+| Time | What to do |
+| --- | --- |
+| 30 minutes | Read the exercise on the page. Preview, play once, check, then choose **Next exercise**. |
+| 30 minutes | Work on your pieces: improve a useful passage or learn part of an easy new piece, then enjoy playing. |
 
-Use a short [note drill](https://www.musictheory.net/exercises/note) or [rhythm exercise](https://sightread.org/?rhythm-reading#t=60&m=4&ts=44&up=q,h,w&ur=0.1&c=yes) only when that specific skill blocks your reading. Neither is a required daily slot.
+Start at level 1. Read the notes before using **Hear it** to check the result. Keep a slow pulse; let a small mistake go and check it afterward. Move up only when fresh exercises are comfortable. The [start-here guide](curriculum/first-week.md) explains the first attempt.
 
-**Keep the pieces you love, and train reading separately with much easier music.** Learning difficult pieces from a score does develop reading, but repeating the same few pieces soon relies heavily on memory. This plan gives you frequent first attempts, a progression, and feedback. Its exact timings are a practical starting point, not a scientifically proven fastest schedule.
+## What the exercises cover
 
-## The curriculum
+| Level | Main demand |
+| --- | --- |
+| 1 | C major, five-note positions, hands alternating |
+| 2 | C major melody over held bass notes |
+| 3 | C, G and F major, mostly stepwise motion and some eighth notes |
+| 4 | Simple left-hand two-note chords and broken patterns |
+| 5 | Phrases in 3/4, using familiar keys |
+| 6 | Gentle 6/8, using familiar keys |
 
-- [Full plan: placement, six stages, progression rules and long-term practice](curriculum/plan.md)
-- [Starting scores and how to find more](curriculum/first-week.md)
-- [Resources, optional book, and evidence](curriculum/resources.md)
+Every exercise has a five-line treble staff and a five-line bass staff, with no printed finger numbers or note names. These are short, original, constrained exercises, not a complete repertoire curriculum or an exam-grade assessment. Repeated musical patterns are expected. Keep the pieces you love in the other half of the hour; broader composed music remains useful as your reading develops.
 
-The six stages are an initial **12-week review framework**, not a deadline or promised exam grade. Repeat or skip ahead based on fresh-reading results. Three fluent first attempts on different days are a better reason to advance than reaching a date.
+- [Practice method, placement and progression](curriculum/plan.md)
+- [Start here](curriculum/first-week.md)
+- [Optional further study and evidence](curriculum/resources.md)
 
-If you buy one resource, consider Paul Harris's [*Improve your sight-reading! Piano Initial Grade*](https://www.fabermusic.com/shop/improve-your-sight-reading-piano-initial-grade-p438408), moving to Grade 1 if the sample is already comfortably easy. It supplies a more systematic exercise sequence; use it **inside** the reading block, rather than adding more work.
+## How the page works
 
-## Using the page
+The browser generates a four-bar exercise from its level and seed, then renders it with a bundled copy of abcjs. The URL identifies the level and seed, so the same URL reproduces the same exercise. **Next exercise** changes the seed. The page remembers your selected level in this browser. Playback is an optional reference after your first attempt; the page does not listen to or grade your playing.
 
-The page is a plain, phone-friendly reading list with two blocks: reading and pieces. Choose your stage, then open a score. Your stage is encoded in the URL, so bookmark that link to return to it. Check your playing aloud after each first attempt; the page does not listen to or grade it.
+The generator and notation renderer run locally in the browser. They do not need a remote rendering service or an external score library. A complete local copy of `docs/`, including its bundled assets, can be opened through `docs/index.html`. You can also run `python3 -m http.server 8765 --directory docs` and visit `http://localhost:8765`. Loading the hosted page initially requires internet access; downloading the whole local copy avoids that dependency.
 
-The page also runs locally: open `docs/index.html`, or run `python3 -m http.server 8765 --directory docs` from the repository and visit `http://localhost:8765`. External exercises and scores require internet access. The curriculum text remains readable directly on GitHub.
+GitHub Pages serves `docs/` on `main`. Level descriptions live in `docs/curriculum.js`; the explanatory documents live in `curriculum/`. There are no analytics or paid integrations.
 
-GitHub Pages serves the `docs/` directory on `main`. Curriculum data lives in `docs/curriculum.js`; the explanatory documents live in `curriculum/`. There are no third-party JavaScript dependencies, analytics or paid integrations in this practice page. External sites have their own policies.
-
-Sources checked 24 October 2026. This repository links to sheet music at its source; it does not redistribute those scores.
+Run `node --test tests/exercises.test.cjs` to check notation against playback, bar lengths, note ranges, staff structure and exercise variety. No package installation is needed. See [third-party notices](THIRD_PARTY_NOTICES.md) for the bundled renderer's license and provenance.

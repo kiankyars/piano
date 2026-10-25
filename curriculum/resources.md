@@ -1,31 +1,31 @@
-# Resources and evidence
+# Optional further study and evidence
 
-Checked 24 October 2026. Use the free core for the first two weeks before deciding whether you need a purchase. Links and features can change.
+The [practice page](https://kiankyars.github.io/piano/) supplies the daily reading exercises itself. Everything below is optional: use it when you want broader repertoire, a published sequence or help with a particular difficulty.
 
-## The free core
+External sources were checked on 24 October 2026. Links, access and product features can change.
 
-| Resource | Role | How to use it |
+## Broader music and focused help
+
+| Resource | When it may help | What to expect |
 | --- | --- | --- |
-| [musictheory.net Note Identification](https://www.musictheory.net/exercises/note) | Optional help with finding notes | Customize clef/range/key. Name and then play each note briefly when note recognition blocks the score; then return to music. |
-| [SightRead.org](https://sightread.org/) | Optional help with rhythm | Use a stage-specific link when rhythm blocks your reading. Tap/count before listening to playback, then return to an easy score. |
-| [G Major Music Theory](https://www.gmajormusictheory.org/Freebies/freebies.html) | Actual piano scores | Choose standard notation from First Pieces, Primer, Level 1 or Level 2. Read before listening to the supplied audio. Difficulty varies within a level. |
+| [G Major Music Theory](https://www.gmajormusictheory.org/Freebies/freebies.html) | You want complete composed pieces beyond four-bar exercises | Difficulty varies within a level. Some entries use finger numbers or nonstandard presentation; choose standard-staff notation when that is your aim. |
+| [musictheory.net Note Identification](https://www.musictheory.net/exercises/note) | A particular clef or note range keeps causing hesitation | Customize clef/range/key, name and play a few notes, then return to music. See the [exercise directory](https://www.musictheory.net/exercises) and [FAQ](https://www.musictheory.net/faq). |
+| [SightRead.org](https://sightread.org/) | You want isolated rhythm examples | Tap and count before playback. Its [URL documentation](https://sightread.org/blog/practice-urls/) describes configurable practice links. |
 
-These sites provide the exercises and scores; this repository supplies the schedule and progression decisions. No equipment connection is required. Their free-access and customization information comes from the [musictheory.net exercise directory](https://www.musictheory.net/exercises), [FAQ](https://www.musictheory.net/faq), and [SightRead.org's URL documentation](https://sightread.org/blog/practice-urls/). If a configured rhythm link stops working, select the stated meter and simple note values manually.
+These are alternatives or supplements, not links you need to follow during each session.
 
-## One optional purchase
+## A published sequence, if wanted
 
-My first choice for a clearer graded sequence is Paul Harris's [*Improve your sight-reading! Piano Initial Grade*](https://www.fabermusic.com/shop/improve-your-sight-reading-piano-initial-grade-p438408), followed by [Grade 1](https://www.fabermusic.com/shop/improve-your-sight-reading-piano-grade-1-p96). Check the publisher's sample before choosing the starting book. Initial may feel elementary compared with Mozart; placement should follow reading ability. The publisher describes rhythm/melody preparation, prepared pieces, graded fresh tests and supporting audio.
+Paul Harris's [*Improve your sight-reading! Piano Initial Grade*](https://www.fabermusic.com/shop/improve-your-sight-reading-piano-initial-grade-p438408), followed by [Grade 1](https://www.fabermusic.com/shop/improve-your-sight-reading-piano-grade-1-p96), offers rhythm/melody preparation, prepared pieces, graded fresh tests and supporting audio. Inspect the publisher's sample for suitable difficulty and presentation before buying. Use it within the existing reading half-hour if its broader sequence becomes useful.
 
-Use the book within your existing reading time. It is a published method aligned with graded learning, not a promise that you will pass an exam. You do not need an exam or several apps at once.
+[RCM Online Sight Reading](https://www.rcmusic.com/learning/digital-learning/rcm-online-ear-training-rcm-online-sight-reading/sight-reading) offers progressive rhythm and playing activities from preparatory levels onward, with preview and self-assessment support. Check current subscription availability in Finland before paying. It is an alternative published program, not a requirement for this plan.
 
-If you specifically want an official digital sequence, [RCM Online Sight Reading](https://www.rcmusic.com/learning/digital-learning/rcm-online-ear-training-rcm-online-sight-reading/sight-reading) offers progressive rhythm and playing activities from preparatory levels onward, with preview and self-assessment support. Check current subscription availability in Finland before paying. This is an alternative to the book, not an additional requirement.
+[Sight Reading Factory](https://www.sightreadingfactory.com/) is another source of generated piano exercises. Its [customization documentation](https://www.sightreadingfactory.com/focus/customization) excludes piano from custom rhythm/range controls; do not assume the generic customization claims apply to piano. Check current account and subscription conditions before choosing it.
 
-If the issue is simply running out of fresh scores, [Sight Reading Factory](https://www.sightreadingfactory.com/) generates new piano exercises. Start with its lowest suitable piano preset. Its [customization documentation](https://www.sightreadingfactory.com/focus/customization) excludes piano from custom rhythm/range controls; do not expect the generic customization claims to apply to piano. Account/subscription conditions should be checked before purchase. The curriculum does not require its automatic assessment features.
+## Why the practice is structured this way
 
-## Why this plan is structured this way
-
-- **Reading has several components.** Ken Johansen's [ISM article on practicing sight-reading](https://www.ism.org/news/how-to-practice-and-teach-sight-reading/) explains why rhythm, visual attention, physical movement and musical understanding need focused work alongside reading quantity. It also distinguishes a first reading from subsequent practice. This is expert pedagogy, not a controlled comparison of all possible curricula.
-- **Varied practice has research support, with limits.** [Zhukov and colleagues' study of a hybrid training approach](https://research.monash.edu/en/publications/improving-sight-reading-skills-in-advanced-pianists-a-hybrid-appr/) examined rhythm, accompanying and style work in advanced pianists. Its small, advanced sample does not establish the best time allocation for a returning adult beginner reader.
+- **Reading has several components.** Ken Johansen's [ISM article on practicing sight-reading](https://www.ism.org/news/how-to-practice-and-teach-sight-reading/) discusses rhythm, visual attention, movement and musical understanding, and distinguishes first reading from subsequent practice. This is expert pedagogy, not a controlled comparison of every curriculum.
+- **Varied practice has research support, with limits.** [Zhukov and colleagues' study of a hybrid training approach](https://research.monash.edu/en/publications/improving-sight-reading-skills-in-advanced-pianists-a-hybrid-appr/) examined rhythm, accompanying and style work in advanced pianists. Its small, advanced sample does not establish the best allocation for a returning adult beginner reader.
 - **Practice matters, and outcomes vary.** [Meinz and Hambrick's study](https://pubmed.ncbi.nlm.nih.gov/20534780/) relates practice and individual differences to sight-reading performance. It does not establish a guaranteed timetable.
 
-The 60-minute allocation, six stages, approximate 90% threshold and three-day advancement rule are **our practical design choices**. They are intended to make decisions observable and adjustable. The learning materials' levels are not interchangeable, and none of these sources validates an exact twelve-week outcome for you.
+The two 30-minute blocks, six generated exercise levels and approximate advancement rule are practical design choices. These sources do not validate this generator as a complete course or prove it is the fastest method. Short exercises make starting and repeating the reading task convenient; longer compositions and feedback remain valuable for broader musicianship.
